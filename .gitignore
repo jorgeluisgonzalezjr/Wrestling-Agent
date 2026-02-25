@@ -1,45 +1,71 @@
-# Environment files
-.env
-.env.*
-!.env.example
-
-# Python bytecode
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Distribution / packaging
-dist/
+*.so
+.Python
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
+*.egg
 
-# Virtual environments
-.venv/
+# Virtual Environments
 venv/
 env/
 ENV/
-
-# uv specific
-.uv/
+.env
 .venv/
-.uvdata/
+.uv/
 
-# IDE specific files
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
-
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Mac specific
 .DS_Store
 
-# Reservation data
-reservations.json
+# OpenAI API
+.env.local
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Local development
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Project specific
+data/
+cache/
+tmp/
+output/
+results/
+*.db
+
+# Encryption
+secret.key
+
+tmp_logs/
